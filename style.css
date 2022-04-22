@@ -1,0 +1,59 @@
+body{
+    background-color: rgb(24, 41, 115);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family:sans-serif;
+}
+
+
+.mic{
+    height: 300px;
+    width: 300px;
+    background-color: rgba(72, 72, 77, 0.486);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mic ion-icon{
+    font-size: 100px;
+   
+}
+
+
+button{
+    font-size: 20px;
+    font-weight: normal;
+    background-color: rgb(1, 69, 158);
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    padding: 20px;
+    margin-top: 10px;
+    color: rgb(159, 159, 159);
+    transition: 0.5s;
+}
+
+button:hover{
+    transform: scale(1.1,1.1);
+}
+button:active{
+    transform: scale(1,1);
+
+}
+
+
+h3{
+    color: rgb(159, 159, 159);
+    font-size: 18px;
+    font-weight: normal;
+}
+h1{
+    color: rgb(159, 159, 159);
+
+}
