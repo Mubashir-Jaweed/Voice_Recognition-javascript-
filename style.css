@@ -12,16 +12,18 @@ body{
 .mic{
     height: 300px;
     width: 300px;
-    background-color: rgba(72, 72, 77, 0.486);
+    background-color: #48484d7c;
     border-radius: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-position: center;
 }
 
 .mic ion-icon{
     font-size: 100px;
+    color: rgb(70, 69, 69);
    
 }
 

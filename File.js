@@ -37,20 +37,25 @@
 
 const btn = document.querySelector('.talk')
 const content = document.querySelector('.content')
-
+const mic = document.querySelector('.mic')
 
 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition
 const recognintion = new SpeechRecognition()
 
 
 recognintion.onstart = function () {
+    mic.style.background = '#48484d7c url(https://cdn.dribbble.com/users/1541110/screenshots/3559194/music-viz.gif)'
+    mic.style.backgroundRepeat = 'no-repeat'
+    mic.style.backgroundSize = '100% 100%'
     console.log('Voice is activated, you can talk to microphone')
+    
 }
 
 // recognintion.onspeechend = function(){}
 
 
 recognintion.onresult = function(event){
+    mic.style.background = '#48484d7c'
     const current = event.resultIndex
     const transcript = event.results[current][0].transcript
     content.innerHTML = transcript;
